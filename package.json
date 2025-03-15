@@ -1,0 +1,31 @@
+{
+  "name": "az_proof_initial_api",
+  "version": "0.0.1",
+  "description": "AZ Suite Proof Api",
+  "main": "src/server.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon",
+    "dev:debug": "nodemon --inspect",
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@pozible/meteor-sha": "^1.0.1",
+    "axios": "^1.8.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto-random-string": "^3.2.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.29.1",
+    "mongoose": "^8.12.1",
+    "mz": "^2.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "sucrase": "^3.15.0"
+  }
+}
